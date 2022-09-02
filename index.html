@@ -5,11 +5,11 @@
 <link rel="apple-touch-icon" href="assets/img/kuzko.png">
 <link rel="icon" type="image/x-icon" href="assets/img/kuzko.png">
 
-<meta property="og:title" content="Title" />
+<meta property="og:title" content="Are the Boats Down at Disney?" />
 <meta property="og:url" content="rjarosh.github.com/aretheboatsdown" />
 <meta property="og:image" content="assets/img/epcot.JPG" />
 <meta property="og:description" 
-  content="[my possibly incorrect guess to] are the boats running at Disney World?" />
+  content="my robot takes a guess based on lightning" />
 
 
 
@@ -41,7 +41,9 @@
 		
 		<details>
 		<summary><p>What is this?</p></summary>
-		<p>I use python, realtime lightning data, image processing, the Twitter API, and some possibly misguided assumptions about Disney's strategy on weather safety to guess whether the boats are running and the pools are open.
+		<p>I use python, real-time lightning data, image processing, and some possibly misguided assumptions about Disney's strategy on weather safety to guess whether the boats at WDW are running.</p><br><
+		<p>The backend script checks for lightning every 60 seconds within a ~7 mile radius from Epcot as an arbitrary point. Status changes are pushed out using the Twitter API. A strike deteced automatically starts a 30-minute cooldown timer before the script runs again.<br><br>
+		<p><b>DISCLAIMER: I play piano for a living.</b></p>
 		<br>
 		<br>
 		<a href="https://twitter.com/aretheboatsdown">Contact me on twitter.</p>
